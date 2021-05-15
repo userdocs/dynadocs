@@ -1,0 +1,12 @@
+{
+    "browser": true,
+    "node": false,
+    "esversion": 6,
+    "strict": "global",
+    "globals": {
+        "$": true,
+        "jQuery": true,
+        "Prism": true,
+        "DOMPurify": true
+    }
+}

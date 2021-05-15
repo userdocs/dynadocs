@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Documentation</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites/dist/css/foundation.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/markdown-it-container/dist/markdown-it-container.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/markdown-it-anchor/dist/markdownItAnchor.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/markdown-it-toc-done-right/dist/markdownItTocDoneRight.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites/dist/js/foundation.min.js"></script>
+  <script type="module" src="assets/js/index.js"></script>
+</head>
+
+<body>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas>
+    <div class="grid-y grid-padding-x" style="height: 100%;">
+      <div id="toc" class="cell auto">
+      </div>
+    </div>
+  </div>
+  <div class="off-canvas-content" data-off-canvas-content>
+    <div class="title-bar hide-for-large">
+      <div class="title-bar-left">
+        <button class="menu-icon" type="button" data-toggle="my-info"></button>
+        <span class="title-bar-title">Dynadocs</span>
+      </div>
+    </div>
+    <div class="callout primary">
+      <article class="grid-container">
+        <div class="">
+          <p class="lead">The idea behind this is that the documentation you are reading is dynamically generated from
+            static markdown content. In this example we are getting the latest release URL via magic variables.</p>
+        </div>
+      </article>
+    </div>
+    <article class="grid-container">
+      <div class="grid-x grid-margin-x small-up-auto medium-up-auto large-up-auto">
+        <div class="cell">
+          <div class="markdown-body" id="markdown-content"></div>
+        </div>
+      </div>
+    </article>
+  </div>
+</body>
+
+</html>
