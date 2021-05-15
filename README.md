@@ -1,5 +1,5 @@
-An idea for interactive and dynamic documentation.
+# Dynadocs
 
-https://userdocs.github.io/dynadocs/
+An idea for interactive and dynamic documentation
 
-Readme
+<https://userdocs.github.io/dynadocs>
